@@ -3,6 +3,10 @@ from fastapi import Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
+
+#rota que responde com a página
+
+
 templates = Jinja2Templates(directory="templates")
 general_pages_router = APIRouter()
 
