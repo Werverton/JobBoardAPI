@@ -13,3 +13,6 @@ uvicorn main:app --host "0.0.0.0" --port "8000"
 Or
 to development tasks:
 uvicorn main:app --reload
+
+##to run tests just type 
+pytest
