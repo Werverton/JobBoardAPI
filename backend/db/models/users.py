@@ -1,11 +1,14 @@
-from sqlalchemy import Column,Integer, String,Boolean, ForeignKey
-from sqlalchemy.orm import relationship
-
 from db.base_class import Base
+from sqlalchemy import Boolean
+from sqlalchemy import Column
+from sqlalchemy import ForeignKey
+from sqlalchemy import Integer
+from sqlalchemy import String
+from sqlalchemy.orm import relationship
 
 
 class User(Base):
-    __table_args__ = {'extend_existing': True} 
+    __table_args__ = {'extend_existing': True}
     id = Column(Integer,primary_key=True,index=True)
     username = Column(String,unique=True,nullable=False)
     email = Column(String,nullable=False,unique=True,index=True)

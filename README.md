@@ -14,5 +14,5 @@ Or
 to development tasks:
 uvicorn main:app --reload
 
-##to run tests just type 
+##to run tests just type
 pytest

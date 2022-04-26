@@ -1,7 +1,9 @@
+from datetime import date
+from datetime import datetime
 from optparse import Option
 from typing import Optional
+
 from pydantic import BaseModel
-from datetime import date,datetime
 
 
 #shared properties
@@ -27,10 +29,10 @@ class JobCreate(JobBase):
         orm_mode= True
 
 class ShowJob(JobBase):
-    title : str 
-    company: str 
+    title : str
+    company: str
     company_url : Optional[str]
-    location : str 
+    location : str
     date_posted : date
     description : Optional[str]
 

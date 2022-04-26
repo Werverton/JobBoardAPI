@@ -1,5 +1,7 @@
 from typing import Optional
-from pydantic import BaseModel, EmailStr
+
+from pydantic import BaseModel
+from pydantic import EmailStr
 
 #propriedades exigidas durante a criação do usuário
 #aqui é feita a validação dos dados
